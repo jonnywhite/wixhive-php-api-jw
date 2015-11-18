@@ -1,23 +1,23 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/27/15
  * Time: 3:02 PM
  */
-namespace epicformbuilder\WixHiveApi\ResponseProcessors;
+namespace Epicformbuilder\WixHiveApi\ResponseProcessors;
 
-use epicformbuilder\Wix\Models\Address;
-use epicformbuilder\Wix\Models\Company;
-use epicformbuilder\Wix\Models\Contact as ContactModel;
-use epicformbuilder\Wix\Models\ContactEmail;
-use epicformbuilder\Wix\Models\ContactName;
-use epicformbuilder\Wix\Models\ContactPhone;
-use epicformbuilder\Wix\Models\ContactUrl;
-use epicformbuilder\Wix\Models\ImportantDate;
-use epicformbuilder\Wix\Models\PagingContactsResult as PagingContactsResultModel;
-use epicformbuilder\Wix\Models\StateLink;
-use epicformbuilder\WixHiveApi\Response;
+use Epicformbuilder\Wix\Models\Address;
+use Epicformbuilder\Wix\Models\Company;
+use Epicformbuilder\Wix\Models\Contact as ContactModel;
+use Epicformbuilder\Wix\Models\ContactEmail;
+use Epicformbuilder\Wix\Models\ContactName;
+use Epicformbuilder\Wix\Models\ContactPhone;
+use Epicformbuilder\Wix\Models\ContactUrl;
+use Epicformbuilder\Wix\Models\ImportantDate;
+use Epicformbuilder\Wix\Models\PagingContactsResult as PagingContactsResultModel;
+use Epicformbuilder\Wix\Models\StateLink;
+use Epicformbuilder\WixHiveApi\Response;
 
 
 class PagingContactsResult implements Processor

@@ -1,16 +1,16 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 4:04 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Sites;
+namespace Epicformbuilder\WixHiveApi\Commands\Sites;
 
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Site;
-use epicformbuilder\WixHiveApi\ResponseProcessors\SitePages;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Site;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\SitePages;
 
 class GetSitePages extends Command
 {

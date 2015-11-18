@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/18/15
  * Time: 10:24 PM
  */
-namespace epicformbuilder\Wix\Models;
+namespace Epicformbuilder\Wix\Models;
 
 class PagingContactsResult extends Model
 {

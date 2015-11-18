@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/21/15
  * Time: 11:26 PM
  */
-namespace epicformbuilder\Wix\Models;
+namespace Epicformbuilder\Wix\Models;
 
 abstract class Model implements \JsonSerializable
 {

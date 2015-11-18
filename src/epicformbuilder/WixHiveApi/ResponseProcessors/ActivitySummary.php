@@ -1,15 +1,15 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 3:34 PM
  */
-namespace epicformbuilder\WixHiveApi\ResponseProcessors;
+namespace Epicformbuilder\WixHiveApi\ResponseProcessors;
 
-use epicformbuilder\Wix\Models\ActivityTypeSummary;
-use epicformbuilder\WixHiveApi\Response;
-use epicformbuilder\Wix\Models\ActivitySummary as ActivitySummaryModel;
+use Epicformbuilder\Wix\Models\ActivityTypeSummary;
+use Epicformbuilder\WixHiveApi\Response;
+use Epicformbuilder\Wix\Models\ActivitySummary as ActivitySummaryModel;
 
 class ActivitySummary implements Processor
 {

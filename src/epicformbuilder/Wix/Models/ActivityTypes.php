@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/27/15
  * Time: 2:15 PM
  */
-namespace epicformbuilder\Wix\Models;
+namespace Epicformbuilder\Wix\Models;
 
 class ActivityTypes extends Model
 {

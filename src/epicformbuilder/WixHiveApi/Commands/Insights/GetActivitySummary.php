@@ -1,17 +1,17 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 3:21 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Insights;
+namespace Epicformbuilder\WixHiveApi\Commands\Insights;
 
-use epicformbuilder\Wix\Scope;
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\ActivitySummary;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
-use epicformbuilder\WixHiveApi\Signature;
+use Epicformbuilder\Wix\Scope;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\ActivitySummary;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\WixHiveApi\Signature;
 
 class GetActivitySummary extends Command
 {

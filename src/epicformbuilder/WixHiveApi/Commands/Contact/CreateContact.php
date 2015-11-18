@@ -1,15 +1,15 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/20/15
  * Time: 4:55 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Contact;
+namespace Epicformbuilder\WixHiveApi\Commands\Contact;
 
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\ContactResult;
-use epicformbuilder\Wix\Models\CreateContact as CreateContactModel;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\ContactResult;
+use Epicformbuilder\Wix\Models\CreateContact as CreateContactModel;
 
 class CreateContact extends Command
 {

@@ -1,15 +1,15 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/26/15
  * Time: 3:29 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Contact;
+namespace Epicformbuilder\WixHiveApi\Commands\Contact;
 
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\Wix\Models\UpsertContact as UpsertContactModel;
-use epicformbuilder\WixHiveApi\ResponseProcessors\ContactResult;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\Wix\Models\UpsertContact as UpsertContactModel;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\ContactResult;
 
 class UpsertContact extends Command
 {

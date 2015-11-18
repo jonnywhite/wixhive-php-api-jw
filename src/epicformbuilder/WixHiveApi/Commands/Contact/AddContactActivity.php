@@ -1,16 +1,16 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 1:51 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Contact;
+namespace Epicformbuilder\WixHiveApi\Commands\Contact;
 
-use epicformbuilder\Wix\Models\Activity;
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\ActivityResult;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\Wix\Models\Activity;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\ActivityResult;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
 
 class AddContactActivity extends Command
 {

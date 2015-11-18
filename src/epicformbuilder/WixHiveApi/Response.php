@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/18/15
  * Time: 11:04 PM
  */
-namespace epicformbuilder\WixHiveApi;
+namespace Epicformbuilder\WixHiveApi;
 
 class Response
 {

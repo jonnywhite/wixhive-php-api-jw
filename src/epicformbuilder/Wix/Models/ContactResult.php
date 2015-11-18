@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/20/15
  * Time: 11:53 PM
  */
-namespace epicformbuilder\Wix\Models;
+namespace Epicformbuilder\Wix\Models;
 
 class ContactResult extends Model
 {

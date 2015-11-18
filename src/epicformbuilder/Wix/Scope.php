@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 1:33 PM
  */
-namespace epicformbuilder\Wix;
+namespace Epicformbuilder\Wix;
 
 class Scope
 {

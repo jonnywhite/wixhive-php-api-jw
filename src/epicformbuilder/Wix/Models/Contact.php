@@ -1,13 +1,13 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/18/15
  * Time: 9:10 PM
  */
-namespace epicformbuilder\Wix\Models;
+namespace Epicformbuilder\Wix\Models;
 
-use epicformbuilder\WixHiveApi\Signature;
+use Epicformbuilder\WixHiveApi\Signature;
 
 class Contact extends Model
 {

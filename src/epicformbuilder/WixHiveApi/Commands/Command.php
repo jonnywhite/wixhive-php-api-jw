@@ -1,13 +1,13 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/20/15
  * Time: 4:58 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands;
+namespace Epicformbuilder\WixHiveApi\Commands;
 
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
 
 abstract class Command{
 

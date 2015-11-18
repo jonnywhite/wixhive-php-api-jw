@@ -23,7 +23,7 @@
         "bin-dir": "./"
     },
     "autoload": {
-        "psr-4": { "epicformbuilder\\": "src/epicformbuilder" }
+        "psr-4": { "Epicformbuilder\\": "src/Epicformbuilder" }
     },
     "minimum-stability": "stable"
 }

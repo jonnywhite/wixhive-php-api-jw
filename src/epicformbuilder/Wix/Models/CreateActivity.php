@@ -1,13 +1,13 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/21/15
  * Time: 12:12 AM
  */
-namespace epicformbuilder\Wix\Models;
+namespace Epicformbuilder\Wix\Models;
 
-use epicformbuilder\WixHiveApi\Signature;
+use Epicformbuilder\WixHiveApi\Signature;
 
 class CreateActivity extends Model
 {

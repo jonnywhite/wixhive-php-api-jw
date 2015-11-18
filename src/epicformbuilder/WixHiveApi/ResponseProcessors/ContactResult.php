@@ -1,14 +1,14 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/27/15
  * Time: 2:59 PM
  */
-namespace epicformbuilder\WixHiveApi\ResponseProcessors;
+namespace Epicformbuilder\WixHiveApi\ResponseProcessors;
 
-use epicformbuilder\WixHiveApi\Response;
-use epicformbuilder\Wix\Models\ContactResult as ContactResultModel;
+use Epicformbuilder\WixHiveApi\Response;
+use Epicformbuilder\Wix\Models\ContactResult as ContactResultModel;
 
 class ContactResult implements Processor
 {

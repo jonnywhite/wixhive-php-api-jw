@@ -1,17 +1,17 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 11:15 AM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Contact;
+namespace Epicformbuilder\WixHiveApi\Commands\Contact;
 
-use epicformbuilder\Wix\Models\ContactUrl;
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
-use epicformbuilder\WixHiveApi\Signature;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Contact;
+use Epicformbuilder\Wix\Models\ContactUrl;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\WixHiveApi\Signature;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Contact;
 
 
 class AddUrlToContact extends Command

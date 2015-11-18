@@ -1,14 +1,14 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/27/15
  * Time: 1:00 PM
  */
-namespace epicformbuilder\WixHiveApi\ResponseProcessors;
+namespace Epicformbuilder\WixHiveApi\ResponseProcessors;
 
-use epicformbuilder\WixHiveApi\Response;
-use epicformbuilder\Wix\Models\ActivityResult as ActivityResultModel;
+use Epicformbuilder\WixHiveApi\Response;
+use Epicformbuilder\Wix\Models\ActivityResult as ActivityResultModel;
 
 class ActivityResult implements Processor
 {

@@ -1,14 +1,14 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 4:06 PM
  */
-namespace epicformbuilder\WixHiveApi\ResponseProcessors;
+namespace Epicformbuilder\WixHiveApi\ResponseProcessors;
 
-use epicformbuilder\WixHiveApi\Response;
-use epicformbuilder\Wix\Models\Site as SiteModel;
+use Epicformbuilder\WixHiveApi\Response;
+use Epicformbuilder\Wix\Models\Site as SiteModel;
 
 class Site implements Processor
 {

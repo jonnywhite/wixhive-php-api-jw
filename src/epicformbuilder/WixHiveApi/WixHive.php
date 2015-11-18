@@ -1,14 +1,14 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/18/15
  * Time: 9:03 PM
  */
-namespace epicformbuilder\WixHiveApi;
+namespace Epicformbuilder\WixHiveApi;
 
-use epicformbuilder\Wix\Models\Model;
-use epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\Wix\Models\Model;
+use Epicformbuilder\WixHiveApi\Commands\Command;
 
 class WixHive{
 

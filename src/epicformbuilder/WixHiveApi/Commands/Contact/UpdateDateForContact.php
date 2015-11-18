@@ -1,17 +1,17 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 12:03 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Contact;
+namespace Epicformbuilder\WixHiveApi\Commands\Contact;
 
-use epicformbuilder\Wix\Models\ImportantDate;
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Contact;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
-use epicformbuilder\WixHiveApi\Signature;
+use Epicformbuilder\Wix\Models\ImportantDate;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Contact;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\WixHiveApi\Signature;
 
 class UpdateDateForContact extends Command
 {

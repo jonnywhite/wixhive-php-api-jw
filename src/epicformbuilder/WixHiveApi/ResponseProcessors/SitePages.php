@@ -1,16 +1,16 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 4:06 PM
  */
-namespace epicformbuilder\WixHiveApi\ResponseProcessors;
+namespace Epicformbuilder\WixHiveApi\ResponseProcessors;
 
-use epicformbuilder\Wix\Models\Page;
-use epicformbuilder\WixHiveApi\Response;
-use epicformbuilder\Wix\Models\SitePages as SitePagesModel;
-use epicformbuilder\Wix\Models\Site as SiteModel;
+use Epicformbuilder\Wix\Models\Page;
+use Epicformbuilder\WixHiveApi\Response;
+use Epicformbuilder\Wix\Models\SitePages as SitePagesModel;
+use Epicformbuilder\Wix\Models\Site as SiteModel;
 
 class SitePages implements Processor
 {

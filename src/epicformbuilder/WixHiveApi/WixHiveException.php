@@ -1,11 +1,11 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/20/15
  * Time: 11:42 PM
  */
-namespace epicformbuilder\WixHiveApi;
+namespace Epicformbuilder\WixHiveApi;
 
 class WixHiveException extends \Exception{
 

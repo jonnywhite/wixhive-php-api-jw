@@ -1,18 +1,18 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/29/15
  * Time: 1:29 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Contact;
+namespace Epicformbuilder\WixHiveApi\Commands\Contact;
 
-use epicformbuilder\Wix\ActivityType;
-use epicformbuilder\Wix\Scope;
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\PagingActivitiesResult;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
-use epicformbuilder\WixHiveApi\Signature;
+use Epicformbuilder\Wix\ActivityType;
+use Epicformbuilder\Wix\Scope;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\PagingActivitiesResult;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Processor;
+use Epicformbuilder\WixHiveApi\Signature;
 
 class GetContactActivities extends Command
 {

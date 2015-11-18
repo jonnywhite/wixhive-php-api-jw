@@ -1,14 +1,14 @@
 <?php
 /**
  * User: EpicFormBuilder
- * Email: support@epicformbuilder.com
+ * Email: support@Epicformbuilder.com
  * Date: 3/25/15
  * Time: 9:33 PM
  */
-namespace epicformbuilder\WixHiveApi\Commands\Activity;
+namespace Epicformbuilder\WixHiveApi\Commands\Activity;
 
-use epicformbuilder\WixHiveApi\Commands\Command;
-use epicformbuilder\WixHiveApi\ResponseProcessors\Activity;
+use Epicformbuilder\WixHiveApi\Commands\Command;
+use Epicformbuilder\WixHiveApi\ResponseProcessors\Activity;
 
 class GetActivityById extends Command
 {
