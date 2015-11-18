@@ -34,7 +34,7 @@ class ActivityType{
     /**
      * @var array
      */
-    private static $allowedTypes = [
+    private static $allowedTypes = array(
         self::AUTH_LOGIN,
         self::AUTH_REGISTER,
         self::AUTH_STATUS_CHANGE,
@@ -56,7 +56,7 @@ class ActivityType{
         self::MUSIC_TRACK_SHARE,
         self::MUSIC_TRACK_SKIP,
         self::SCHEDULER_APPOINTMENT,
-    ];
+    );
 
     /**
      * @param string $type

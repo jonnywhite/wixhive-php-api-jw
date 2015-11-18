@@ -15,7 +15,7 @@ class GetActivitiesTest extends \PHPUnit_Framework_TestCase
 
     public function testGetActivityTypesCommandShouldReturnExpectedData()
     {
-        $activityTypes = [ActivityType::AUTH_LOGIN, ActivityType::AUTH_STATUS_CHANGE];
+        $activityTypes = array(ActivityType::AUTH_LOGIN, ActivityType::AUTH_STATUS_CHANGE);
         $until = new \DateTime();
         $from = new \DateTime();
         $scope = Scope::SITE;

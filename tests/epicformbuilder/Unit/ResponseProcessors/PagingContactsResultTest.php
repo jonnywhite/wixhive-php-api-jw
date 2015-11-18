@@ -31,7 +31,7 @@ class PagingContactsResultTest extends PHPUnit_Framework_TestCase
         $data->pageSize = $pageSize;
         $data->previousCursor = $previousCursor;
         $data->nextCursor = $nextCursor;
-        $data->results = [$contactObject];
+        $data->results = array($contactObject);
 
         $pagingContactResultModel = (new PagingContactsResult())->process(new Response($data));
 

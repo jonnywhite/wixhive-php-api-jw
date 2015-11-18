@@ -45,18 +45,18 @@ class WixHive{
 
         $date = new \DateTime("now", new \DateTimeZone("UTC"));
 
-        $getParams = ["version" => self::API_VERSION];
+        $getParams = array("version" => self::API_VERSION);
         if ($userSessionToken !== null) $getParams['userSessionToken'] = $userSessionToken;
 
         // prepare the request based on the command
-        $headers = [
+        $headers = array(
             "x-wix-application-id" => $this->applicationId,
             "x-wix-instance-id" => $this->instanceId,
             "x-wix-timestamp" => $date->format(Signature::TIME_FORMAT),
             "x-wix-signature" => Signature::sign($this->applicationId, $this->secretKey, $this->instanceId, $userSessionToken, Command::WIXHIVE_VERSION, self::API_VERSION, $command->getCommand(), $command->getBody(), $command->getHttpMethod(), $date),
             "Content-Type" => "application/json",
             "Expect" => "",
-        ];
+        );
         $wixHiveRequest = new Request($command->getEndpointUrl($getParams), $command->getHttpMethod(), $headers, $command->getBody());
 
         // trigger the request to the WixHive API

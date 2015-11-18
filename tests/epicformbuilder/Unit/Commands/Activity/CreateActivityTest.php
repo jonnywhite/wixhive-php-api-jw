@@ -25,7 +25,7 @@ class CreateActivityTest extends \PHPUnit_Framework_TestCase
         $item->value = "test value";
 
         $activityInfo = new \stdClass();
-        $activityInfo->fields = [$item];
+        $activityInfo->fields = array($item);
 
         $createActivityModel = new CreateActivity($date, ActivityType::CONTACT_CONTACT_FORM, null, null, $activityInfo, null);
         $createActivity = new CreateActivityCommand($createActivityModel);

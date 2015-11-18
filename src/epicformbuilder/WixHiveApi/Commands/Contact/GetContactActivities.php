@@ -38,12 +38,12 @@ class GetContactActivities extends Command
         foreach($activityTypes as $key => $type)
             if (!ActivityType::isTypeAllowed($type)) unset($activityTypes[$key]);
 
-        $this->getParams = [
+        $this->getParams = array(
             'activityTypes' => implode(',', $activityTypes),
             'scope' => Scope::isScopeAllowed($scope) ? $scope : Scope::SITE,
             'cursor' => $cursor,
             'pageSize' => $pageSize,
-        ];
+        );
 
         if ($cursor == null) {
             if ($until !== null) $this->getParams['until'] = $until->format(Signature::TIME_FORMAT);

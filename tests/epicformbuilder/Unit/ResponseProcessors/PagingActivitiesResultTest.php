@@ -40,7 +40,7 @@ class PagingActivitiesResultTest extends PHPUnit_Framework_TestCase
         $data->pageSize = $pageSize;
         $data->previousCursor = $previousCursor;
         $data->nextCursor = $nextCursor;
-        $data->results = [$activityObject];
+        $data->results = array($activityObject);
 
 
         $pagingActivitiesResultModel = (new PagingActivitiesResult())->process(new Response($data));

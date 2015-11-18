@@ -27,32 +27,32 @@ class Contact implements Processor
      */
     public function process(Response $response)
     {
-        $emails=[];
+        $emails=array();
         foreach($response->getResponseData()->emails as $email){
             $emails[] = new ContactEmail($email->id, $email->tag, $email->email, $email->emailStatus);
         }
 
-        $phones = [];
+        $phones = array();
         foreach($response->getResponseData()->phones as $phone){
             $phones[] = new ContactPhone($phone->id, $phone->tag, $phone->phone, $phone->normalizedPhone);
         }
 
-        $addresses= [];
+        $addresses= array();
         foreach($response->getResponseData()->addresses as $address){
             $addresses[] = new Address($address->id, $address->tag, $address->address, $address->neighborhood, $address->city, $address->region, $address->country, $address->postalCode);
         }
 
-        $urls = [];
+        $urls = array();
         foreach($response->getResponseData()->urls as $url){
             $urls[] = new ContactUrl($url->id, $url->tag, $url->url);
         }
 
-        $dates = [];
+        $dates = array();
         foreach($response->getResponseData()->dates as $date){
             $dates[] = new ImportantDate($date->id, $date->tag, new \DateTime($date->date));
         }
 
-        $links = [];
+        $links = array();
         foreach($response->getResponseData()->links as $link){
             $links[] = new StateLink($link->href, $link->rel);
         }

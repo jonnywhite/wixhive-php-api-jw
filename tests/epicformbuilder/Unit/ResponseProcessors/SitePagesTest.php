@@ -38,7 +38,7 @@ class SitePagesTest extends PHPUnit_Framework_TestCase
 
         $data = new stdClass();
         $data->siteUrl = $siteUrl;
-        $data->pages = [$page];
+        $data->pages = array($page);
 
         $sitePageModel  = (new SitePages())->process(new Response($data));
 

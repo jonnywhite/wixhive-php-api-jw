@@ -27,7 +27,7 @@ class Connector{
         }
 
         if (!empty($wixHiveRequest->headers)){
-            $headers = [];
+            $headers = array();
             foreach($wixHiveRequest->headers as $key => $value){
                 $headers[] = "$key: $value";
             }

@@ -22,18 +22,18 @@ abstract class Command{
     protected $httpMethod;
 
     /** @var  array */
-    protected $httpHeaders = [];
+    protected $httpHeaders = array();
 
     /** @var  mixed */
     protected $requestBodyObject;
 
     /** @var array  */
-    protected $getParams=[];
+    protected $getParams=array();
 
     /**
      * @return string
      */
-    public function getEndpointUrl(array $getParams = []){
+    public function getEndpointUrl(array $getParams = array()){
         $url = self::WIXHIVE_HTTP_SCHEME .'://'.self::WIXHIVE_HOST.'/'.self::WIXHIVE_VERSION . $this->command;
 
         $getParams = $this->getParams + $getParams;

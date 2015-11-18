@@ -21,7 +21,7 @@ class ActivitySummary implements Processor
      */
     public function process(Response $response)
     {
-        $activityTypes = [];
+        $activityTypes = array();
         foreach($response->getResponseData()->activityTypes as $type){
             $from = new \DateTime($type->from, new \DateTimeZone("UTC"));
             $until = isset($type->until) ? new \DateTime($type->until, new \DateTimeZone("UTC")) : null;

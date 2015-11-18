@@ -16,7 +16,7 @@ class ActivityTypesTest extends PHPUnit_Framework_TestCase
 
     public function testProcessShouldReturnExpectedActivityTypesModel()
     {
-        $types = [ActivityType::AUTH_LOGIN, ActivityType::AUTH_REGISTER];
+        $types = array(ActivityType::AUTH_LOGIN, ActivityType::AUTH_REGISTER);
         $expectedActivityTypesModel = new ActivityTypesModel($types);
 
         $data = new stdClass();

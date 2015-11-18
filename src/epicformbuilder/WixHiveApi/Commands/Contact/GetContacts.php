@@ -25,7 +25,7 @@ class GetContacts extends Command
      * @param string $pageSize
      */
     public function __construct($tag, $cursor, $pageSize){
-        $this->getParams = ["tag" => $tag, "cursor" => $cursor, "pageSize" => $pageSize];
+        $this->getParams = array("tag" => $tag, "cursor" => $cursor, "pageSize" => $pageSize);
     }
 
 

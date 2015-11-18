@@ -21,7 +21,7 @@ class PagingActivitiesResult implements Processor
      */
     public function process(Response $response)
     {
-        $results = [];
+        $results = array();
         foreach($response->getResponseData()->results as $result){
 
             $activity = new ActivityModel(

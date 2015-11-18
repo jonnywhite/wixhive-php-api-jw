@@ -32,35 +32,35 @@ trait Givens
         $picture = "picture".rand(1, 100);
         $company = new Company("role", "Wix");
 
-        $emails = [
+        $emails = array(
             new ContactEmail(rand(1,100), "contact1", "first@gmail.com", "optOut"),
             new ContactEmail(rand(1,100), "contact2", "second@gmail.com", "transactional"),
-        ];
+        );
 
-        $phones = [
+        $phones = array(
             new ContactPhone(rand(1,100), "phone1", "phone_number", "normalized phone number"),
             new ContactPhone(rand(1,100), "phone2", "phone_number 2", "normalized phone number 2"),
-        ];
+        );
 
-        $addresses = [
+        $addresses = array(
             new Address(rand(1,100), "address1", "address", "neighborhood", "London", "London area", "UK", "12345"),
             new Address(rand(1,100), "address2", "address2", "neighborhood2", "Paris", "Paris area", "France", "54321"),
-        ];
+        );
 
-        $urls = [
+        $urls = array(
             new ContactUrl(rand(1,100), "url_tag", "http://apple.com"),
             new ContactUrl(rand(1,100), "url_tag2", "http://wix.com"),
-        ];
+        );
 
-        $dates = [
+        $dates = array(
             new ImportantDate(rand(1,100), "date_tag", new DateTime('now', new DateTimeZone("UTC"))),
             new ImportantDate(rand(1,100), "date_tag2", new DateTime('-1 hour', new DateTimeZone("UTC"))),
-        ];
+        );
 
-        $links = [
+        $links = array(
             new StateLink("http://apple.com/macbook", "rel"),
             new StateLink("http://apple.com/imac", "rel"),
-        ];
+        );
 
         $createdAt = new DateTime("-1 hour", new DateTimeZone("UTC"));
         $modifiedAt = new DateTime("now", new DateTimeZone("UTC"));

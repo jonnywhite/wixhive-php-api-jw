@@ -14,7 +14,7 @@ class EmailSubscriptionType
     const TRANSACTIONAL = "transactional";
     const RECURRING = "recurring";
 
-    private static $allowedTypes = [self::OPT_OUT, self::TRANSACTIONAL, self::RECURRING];
+    private static $allowedTypes = array(self::OPT_OUT, self::TRANSACTIONAL, self::RECURRING);
 
     /**
      * @param string $type

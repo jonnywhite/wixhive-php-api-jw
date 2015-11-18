@@ -16,7 +16,7 @@ class GetContactActivitiesTest extends \PHPUnit_Framework_TestCase
     public function testUpdateAddressForContactCommandShouldReturnExpectedData()
     {
         $contactId = "12345";
-        $activityTypes = [ActivityType::AUTH_REGISTER, ActivityType::AUTH_STATUS_CHANGE];
+        $activityTypes = array(ActivityType::AUTH_REGISTER, ActivityType::AUTH_STATUS_CHANGE);
         $cursor = null;
         $from = new DateTime("2015-01-01 12:12:12", new DateTimeZone("UTC"));
         $until = new DateTime("2015-02-01 12:12:12", new DateTimeZone("UTC"));

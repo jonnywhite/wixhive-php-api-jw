@@ -22,10 +22,10 @@ class ActivitySummaryTest extends PHPUnit_Framework_TestCase
         $from = new DateTime("2015-01-01 12:12:12", new DateTimeZone("UTC"));
         $until = new DateTime("2015-02-01 12:12:12", new DateTimeZone("UTC"));
 
-        $activityTypes = [
+        $activityTypes = array(
             new ActivityTypeSummary(ActivityType::AUTH_LOGIN, $total, $from, $until),
             new ActivityTypeSummary(ActivityType::AUTH_REGISTER, $total, $from, $until),
-        ];
+        );
 
         $expectedActivitySummaryModel = new ActivitySummaryModel($activityTypes, $total, $from, $until);
 
@@ -42,7 +42,7 @@ class ActivitySummaryTest extends PHPUnit_Framework_TestCase
         $activityTypesObject2->until = $until->format(Signature::TIME_FORMAT);
 
         $data = new stdClass();
-        $data->activityTypes = [$activityTypesObject1, $activityTypesObject2];
+        $data->activityTypes = array($activityTypesObject1, $activityTypesObject2);
         $data->total = $total;
         $data->from = $from->format(Signature::TIME_FORMAT);
         $data->until = $until->format(Signature::TIME_FORMAT);

@@ -12,7 +12,7 @@ class Scope
     const SITE = "site";
     const APP = "app";
 
-    private static $allowedScopes = [self::SITE, self::APP];
+    private static $allowedScopes = array(self::SITE, self::APP);
 
     /**
      * @param string $scope

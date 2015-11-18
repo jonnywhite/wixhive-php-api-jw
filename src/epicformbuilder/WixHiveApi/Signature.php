@@ -27,22 +27,22 @@ class Signature{
      */
     public static function sign($applicationId, $secretKey, $instanceId, $userSessionToken, $apiVersion, $apiVersionInGetParam, $command, $body, $httpMethod, \DateTime $date){
 
-        $queryData = [
+        $queryData = array(
             "x-wix-application-id" => $applicationId,
             "x-wix-instance-id" => $instanceId,
             "x-wix-timestamp" => $date->format(self::TIME_FORMAT),
             "version" => $apiVersionInGetParam,
-        ];
+        );
         if ($userSessionToken !== null) $queryData['userSessionToken'] = $userSessionToken;
 
         ksort($queryData);
 
-        $signData = [
+        $signData = array(
             $httpMethod,
             "/".$apiVersion.$command,
             implode("\n", array_values($queryData)),
             trim($body)
-        ];
+        );
 
         $tmp = strtr(base64_encode(hash_hmac("sha256", trim(implode("\n", $signData)), $secretKey, true)), "+/", "-_");
         $tmp = str_replace("=", "", $tmp);

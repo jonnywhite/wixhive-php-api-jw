@@ -29,35 +29,35 @@ class PagingContactsResult implements Processor
      */
     public function process(Response $response)
     {
-        $results = [];
+        $results = array();
         foreach($response->getResponseData()->results as $result){
 
-            $emails=[];
+            $emails=array();
             foreach($result->emails as $email){
                 $emails[] = new ContactEmail($email->id, $email->tag, $email->email, $email->emailStatus);
             }
 
-            $phones = [];
+            $phones = array();
             foreach($result->phones as $phone){
                 $phones[] = new ContactPhone($phone->id, $phone->tag, $phone->phone, $phone->normalizedPhone);
             }
 
-            $addresses= [];
+            $addresses= array();
             foreach($result->addresses as $address){
                 $addresses[] = new Address($address->id, $address->tag, $address->address, $address->neighborhood, $address->city, $address->region, $address->country, $address->postalCode);
             }
 
-            $urls = [];
+            $urls = array();
             foreach($result->urls as $url){
                 $urls[] = new ContactUrl($url->id, $url->tag, $url->url);
             }
 
-            $dates = [];
+            $dates = array();
             foreach($result->dates as $date){
                 $dates[] = new ImportantDate($date->id, $date->tag, new \DateTime($date->date));
             }
 
-            $links = [];
+            $links = array();
             foreach($result->links as $link){
                 $links[] = new StateLink($link->href, $link->rel);
             }
