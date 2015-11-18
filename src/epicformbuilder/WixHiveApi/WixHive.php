@@ -60,7 +60,8 @@ class WixHive{
         $wixHiveRequest = new Request($command->getEndpointUrl($getParams), $command->getHttpMethod(), $headers, $command->getBody());
 
         // trigger the request to the WixHive API
-        $response = (new Connector)->execute($wixHiveRequest);
+        $connector = new Connector();
+        $response = $connector->execute($wixHiveRequest);
 
         // process received response from WixHive API
         return ResponseProcessor::process($command, $response);
