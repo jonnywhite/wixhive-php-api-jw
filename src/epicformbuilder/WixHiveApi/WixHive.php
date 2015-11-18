@@ -12,7 +12,7 @@ use Epicformbuilder\WixHiveApi\Commands\Command;
 
 class WixHive{
 
-    const API_VERSION = "1.0.0";
+    const API_VERSION = "2.0.0";
 
     /** @var  string */
     private $applicationId;
@@ -58,6 +58,7 @@ class WixHive{
             "Expect" => "",
         );
         $wixHiveRequest = new Request($command->getEndpointUrl($getParams), $command->getHttpMethod(), $headers, $command->getBody());
+
 
         // trigger the request to the WixHive API
         $connector = new Connector();

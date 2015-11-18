@@ -7,7 +7,7 @@
  */
 namespace Epicformbuilder\Wix\Models;
 
-abstract class Model implements \JsonSerializable
+abstract class Model
 {
     /**
      * @return \stdClass
