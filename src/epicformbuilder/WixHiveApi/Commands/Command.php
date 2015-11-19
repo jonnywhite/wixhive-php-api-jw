@@ -64,7 +64,8 @@ abstract class Command{
      * @return string
      */
     public function getBody(){
-        return $this->requestBodyObject ? json_encode($this->requestBodyObject, JSON_UNESCAPED_SLASHES) : "";
+        $this->utf8_encode_deep($this->requestBodyObject);
+        return $this->requestBodyObject ?  json_encode($this->requestBodyObject) : "";
     }
 
     /**
@@ -78,4 +79,22 @@ abstract class Command{
      * @return Processor
      */
     abstract public function getResponseProcessor();
+
+    private function utf8_encode_deep(&$input) {
+        if (is_string($input)) {
+            $input = utf8_encode($input);
+        } else if (is_array($input)) {
+            foreach ($input as &$value) {
+                $this->utf8_encode_deep($value);
+            }
+
+            unset($value);
+        } else if (is_object($input)) {
+            $vars = array_keys(get_object_vars($input));
+
+            foreach ($vars as $var) {
+                $this->utf8_encode_deep($input->$var);
+            }
+        }
+    }
 }

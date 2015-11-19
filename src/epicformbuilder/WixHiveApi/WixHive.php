@@ -61,7 +61,7 @@ class WixHive{
 
 
         // trigger the request to the WixHive API
-        $connector = new Connector;
+        $connector = new Connector();
         $response = $connector->execute($wixHiveRequest);
 
         // process received response from WixHive API

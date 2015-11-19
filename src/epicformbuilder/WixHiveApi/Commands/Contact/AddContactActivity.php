@@ -26,7 +26,7 @@ class AddContactActivity extends Command
      **/
     public function __construct($contactId, Activity $activity)
     {
-        $this->command = str_replace(['{contactId}'], [$contactId,], $this->command);
+        $this->command = str_replace(array('{contactId}'), array($contactId,), $this->command);
         $this->requestBodyObject = $activity;
     }
 
