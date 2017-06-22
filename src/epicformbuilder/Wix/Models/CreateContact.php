@@ -19,13 +19,13 @@ class CreateContact extends Model
     public $company;
 
     /** @var array - Accepted value type is ContactEmail */
-    public $emails=array();
+    public $emails=[];
 
     /** @var array - Accepted value type is ContactPhone */
-    public $phones=array();
+    public $phones=[];
 
     /** @var array - Accepted value type is Address */
-    public $addresses=array();
+    public $addresses=[];
 
     /** @var array - Accepted value type is ContactUrl */
     public $urls;

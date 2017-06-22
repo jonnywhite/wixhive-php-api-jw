@@ -16,7 +16,7 @@ class Request{
     public $httpMethod;
 
     /** @var array  */
-    public $headers =array();
+    public $headers =[];
 
     /** @var  string */
     public $body;
@@ -27,7 +27,7 @@ class Request{
      * @param array  $headers
      * @param string $body
      */
-    public function __construct($endpoint="", $httpMethod="GET",  array $headers=array(), $body = ""){
+    public function __construct($endpoint="", $httpMethod="GET",  array $headers=[], $body = ""){
         $this->endpoint = $endpoint;
         $this->httpMethod = $httpMethod;
         $this->headers = $headers;

@@ -35,7 +35,7 @@ class Connector{
 
         }
         curl_setopt($resource, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($resource, CURLOPT_VERBOSE, 0);
+        curl_setopt($resource, CURLOPT_VERBOSE, 1);
         curl_setopt($resource, CURLOPT_HEADER, 0);
 
         $result = curl_exec($resource);
