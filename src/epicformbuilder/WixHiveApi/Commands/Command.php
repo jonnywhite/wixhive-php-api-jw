@@ -13,7 +13,7 @@ abstract class Command{
 
     const WIXHIVE_HTTP_SCHEME = "https";
     const WIXHIVE_HOST = "openapi.wix.com";
-    const WIXHIVE_VERSION = "v1";
+    const WIXHIVE_VERSION = "v2";
 
     /** @var  string */
     protected $command;
