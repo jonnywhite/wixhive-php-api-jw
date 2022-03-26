@@ -17,7 +17,7 @@
     ],
     "require-dev": {
         "phake/phake": "2.0.*@dev",
-        "phpunit/phpunit": "4.2.6"
+        "phpunit/phpunit": "4.8.28"
     },
     "config": {
         "bin-dir": "./"
